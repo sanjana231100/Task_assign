@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    background-color: #95afc0;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    
+}
+.grid{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.filters, .actionBtns{
+    height: 50%;
+    border-radius: 0.2rem;
+    background-color: rgb(75, 73, 71);
+    margin-top: calc( ( 25 / 100 ) * 15vh );
+    margin-left: 6rem;
+}
+.filters{
+    width: 16rem;
+    display: flex;
+    border-color: black;
+}
+.actionBtns{
+    width: 8rem;
+    display: flex;
+}
+.filter{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.filter:hover, .add:hover, .delete:hover, .delete-selected{
+    background-color: rgb(184, 185, 184);
+}
+.filter div{
+    height: 90%;
+    width: 90%;
+    border-radius: 0.5rem;
+}
+.pink{
+    background-color: #c44569;
+}
+.green{
+    background-color: #7bed9f;
+}
+.blue{
+    background-color: #0652DD;
+}
+.black{
+    background-color: black;
+}
+.add, .delete{
+    height: 100%;
+    width: 50%;
+    color: black;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    /* default flex dirn => horizontal  */
+    justify-content: center;
+    /* this will set your children in horizontal center  */
+    align-items: center;
+    /* this will set your children in vertical center  */
+}
+.material-icons-round{
+    font-size: 2rem !important;
+}
+.modal{
+    height: 20rem;
+    width: 30rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+
+    display: flex;
+    border: 1px solid rgb(37, 36, 36);
+}
+.modal-text-area-container{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#95949c;
+}
+.modal-text-area-inner{
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+    background-color:white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    outline: none;
+    overflow: auto;
+}
+.modal-filter-container{
+    display: flex;
+    background-color: #383e41;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+.modal-filter-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    height: 80%;
+    width: 70%;
+}
+.modal-priorities{
+    height: 22%;
+    width: 80%;
+
+}
+.modal-priorities:hover, .selected{
+    border: 5px solid gray;
+}
+.ticket{
+    height: 13rem;
+    width: 17rem;
+    margin: 10px;
+    border-radius: 0.2rem 0.2rem 0rem 0rem;
+    
+}
+.ticket-color{
+    height: 8%;
+    border-radius: 0.2rem;
+}
+.ticket-id{
+    height: 18%;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #95949c;
+}
+.ticket-content{
+    height: 74%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8eadd;
+    text-align: center;
+    outline:none;
+    
+}
